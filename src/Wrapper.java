@@ -4,9 +4,9 @@ public enum Wrapper {
     //  (?:\d{3}-){2}\d{4} matches 123-456-7890
     //  \(\d{3}\)\d{3}-?\d{4} matches (123)456-7890 or (123)4567890
 
-    JSON(TypeConstants.EMAIL_PATTERN),
-    CSV(TypeConstants.PHONE_NUMBER),
-    XML(TypeConstants.NAME_PATTERN);
+    EMAIL(TypeConstants.EMAIL_PATTERN),
+    PHONE_NUMBER(TypeConstants.PHONE_NUMBER),
+    NAME(TypeConstants.NAME_PATTERN);
     private final String patternName;
 
     Wrapper(String namePattern) {
