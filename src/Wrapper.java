@@ -22,7 +22,7 @@ public enum Wrapper {
 
         public static final String EMAIL_PATTERN= "^[a-zA-Z0-9_]+@[a-z]+\\.[a-z]{2,}$";
         public static final String PHONE_NUMBER= "^\\(\\d{3}\\)\\d{8}$";//"|(?:\\d{3}-){2}\\d{4}|\\(\\d{3}\\)\\d{3}-?\\d{4}";
-        public static final String NAME_PATTERN= "^[a-zA-Z0-9_]+@[a-z]+\\.[a-z]{2,}$";
+        public static final String NAME_PATTERN= "^[a-zA-Z0-9_]+$";
     }
 
 }
