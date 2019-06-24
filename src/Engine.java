@@ -4,7 +4,7 @@ public class Engine {
     {
         String kw = String.valueOf(keyword);
 
-        String res = (Wrapper.TypeConstants.NAME_PATTERN.matches(kw)) ? "name" : (Wrapper.TypeConstants.EMAIL_PATTERN.matches(kw)) ? "email" : (Wrapper.TypeConstants.PHONE_NUMBER.matches(kw)) ? "phone": "unknown";
+        String res = (kw.matches(Wrapper.TypeConstants.NAME_PATTERN)) ? "name" : (kw.matches(Wrapper.TypeConstants.EMAIL_PATTERN)) ? "email" : (kw.matches(Wrapper.TypeConstants.PHONE_NUMBER)) ? "phone": "unknown";
         switch(res) {
             case "name":
                 // Statements
@@ -19,7 +19,6 @@ public class Engine {
                 // Statements
                 return  " A PHONE NUMBER";
                  // optional
-
             // You can have any number of case statements.
             default : // Optional
                 // Statements
